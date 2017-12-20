@@ -1,5 +1,6 @@
 # rydeit
-this is a taxi aggregator , we managed to do for OLA and Uber cab booking 
+********
+this is a taxi aggregator android app  , we managed to do for OLA and Uber cab booking 
 OLA  - Handles ride tracking and entire lifecycle 
 UBER - Apparently uber did not allow us to use their API for aggregation, so we have a configuration to turn off and on,
 the default one takes to uber app
@@ -7,8 +8,7 @@ Flipkart - It also uses one of the affiliate API for flipkart
 
 Major contributors :
 ********************
-Prakhyath 
-Aditya Khambampati 
+Prakhyath H  & Aditya Khambampati 
 
 Next Steps :
 *************
