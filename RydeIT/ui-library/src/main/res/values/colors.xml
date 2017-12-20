@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00838f</color>
+    <color name="colorPrimaryDark">#009688</color>
+    <color name="colorAccent">#FF6F00</color>
+    <color name="toolbarTransparent">#00FFFFFF</color>
+    <color name="preference_title_header">#0088cb</color>
+    <color name="lesswhite">#f8f8f8</color>
+    <color name="menu_blue_background">#1864AF</color>
+    <color name="lib_gray_222">#ff222222</color>
+    <color name="tab_bg">#D9ffffff</color>
+    <color name="directon_button_normal">#0063ae</color>
+    <color name="direction_button_tap">#004d87</color>
+    <color name="share_button_tap">#ebebeb</color>
+    <color name="white">#ffffff</color>
+    <color name="dkgray">#201E1E</color>
+    <color name="hex_gray">#666666</color>
+    <color name="light_gray">#d6d6d6</color>
+    <color name="dr_gray_background">#3a3f45</color>
+    <color name="dr_gray_header">#2e3237</color>
+    <color name="dr_line_color">#61656a</color>
+    <color name="dr_blue_color">#569DD6</color>
+    <color name="dr_list_ontap">#24272b</color>
+    <color name="dr_text_light_color">#7E8082</color>
+    <color name="dr_light_white">#FEFEFD</color>
+    <color name="row_light_blue">#55b4ff</color>
+
+    <!-- Action/Notification Bar Color codes -->
+    <color name="notificationbar_bg">@android:color/black</color>
+    <color name="actionbar_bg">#201E1E</color><!--#808000-->
+    <color name="actionbar_title_txt_color">#FFC107</color>
+    <color name="actionbar_header">#0063ae</color>
+
+    <!--Drawer Menu colors-->
+    <color name="drawer_bg">#201E1E</color>
+    <color name="drawer_devider_color">#201E1E</color>
+    <color name="drawer_listrow_bg">#201E1E</color>
+    <color name="drawer_listrow_bg_selected">#FFC107</color>
+    <color name="drawer_Login_bg_color">#201E1E</color>
+    <color name="drawer_Login_text_color">#FFC107</color>
+    <color name="drawer_item_text_color">@android:color/white</color>
+
+</resources>

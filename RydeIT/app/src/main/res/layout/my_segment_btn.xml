@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/button_container"
+    android:layout_width="match_parent"
+    android:layout_height="36dip"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/map_btn"
+        android:layout_width="0dp"
+        android:layout_height="36dip"
+        android:clickable="true"
+        android:background="@drawable/background"
+        android:layout_weight="49.8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textStyle="italic"
+            android:text="BOOK CABS"
+            android:textColor="@color/bright_foreground_inverse_material_dark"
+         />
+
+        <View
+            android:id="@+id/map_selected"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_weight="0.4"
+        android:layout_width="0dp"
+        android:layout_height="36dip"
+        android:background="@android:color/darker_gray" />
+
+    <RelativeLayout
+        android:id="@+id/offer_btn"
+        android:background="@drawable/background"
+        android:layout_width="0dp"
+        android:layout_height="36dip"
+        android:layout_weight="49.8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="OFFERS"
+            android:textStyle="italic"
+            android:clickable="false"
+            android:focusable="false"
+            android:textColor="@color/bright_foreground_inverse_material_dark"
+            android:focusableInTouchMode="false" />
+
+        <View
+            android:id="@+id/offer_btn_selected"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

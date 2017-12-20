@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dip"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip"
+    android:layout_marginTop="10dip"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/logoflip"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/logo_flipkart"/>
+
+     <com.android.volley.toolbox.NetworkImageView
+         android:padding="5dp"
+         android:layout_width="100dip"
+         android:layout_height="100dip"
+         android:id="@+id/promoimage"
+         android:src="@drawable/logo_flipkart"
+         />
+
+
+      <TextView
+          android:id="@+id/tv1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=""
+          android:maxLines="3"
+          android:textSize="16sp"
+          android:ellipsize="end"
+          android:layout_margin="5dip"
+          android:textStyle="italic"
+          android:layout_toLeftOf="@id/logoflip"
+          android:layout_toRightOf="@id/promoimage"
+          android:textColor="@color/actionbar_bg"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/tv2"
+            android:layout_toRightOf="@id/promoimage"
+            android:layout_alignParentBottom="true"
+            android:textSize="18sp"
+            android:text=""
+            android:textStyle="bold|italic"
+            android:paddingTop="3dip"
+            android:paddingBottom="3dip"
+            android:background="@color/actionbar_title_txt_color"
+            android:textColor="@color/actionbar_bg"
+            android:gravity="center"/>
+
+</RelativeLayout>

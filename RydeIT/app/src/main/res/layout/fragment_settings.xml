@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rydeit.view.SettingsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|top"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            style="@android:style/TextAppearance.Medium"
+            android:padding="10dp"
+            android:id="@+id/bosl"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center|left"
+            android:layout_gravity="left"
+            android:text="Open Source License"
+            android:textSize="18sp"
+            android:textColor="#161616"
+            />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+        <TextView
+            style="@android:style/TextAppearance.Medium"
+            android:padding="10dp"
+            android:id="@+id/bSendLogs"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:gravity="center|left"
+            android:layout_gravity="left"
+            android:text="Send Logs"
+            android:textSize="18sp"
+            android:textColor="#161616"
+            />
+        <TextView
+            android:id="@+id/border"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+</FrameLayout>
+

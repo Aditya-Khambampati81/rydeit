@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="NoActionBarTheme" parent="MyBaseTheme">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowDisablePreview">true</item>
+
+
+     </style>
+
+    <style name="ActionToolBarTheme" parent="MyBaseTheme">
+        <item name="windowActionBar">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <!--<item name="colorPrimary">@color/splash_yellow</item>-->
+        <!--<item name="colorPrimaryDark">@color/splash_yellow</item>-->
+        <!--<item name="colorAccent">@color/wallet_holo_blue_light</item>-->
+    </style>
+    <style name="ActionBarTheme" parent="MyBaseActionBarTheme">
+        <item name="android:windowDisablePreview">true</item>
+        <!--<item name="colorPrimary">@color/splash_yellow</item>-->
+        <!--<item name="colorPrimaryDark">@color/splash_yellow</item>-->
+        <!--<item name="colorAccent">@color/wallet_holo_blue_light</item>-->
+    </style>
+    <style name="Splash_Screen" parent="MyBaseTheme">
+
+    <!-- Customize your theme here. -->
+    <item name="android:windowBackground">@color/actionbar_bg</item>
+    <item name="android:windowNoTitle">true</item>
+
+</style>
+    <style name="loginscreen" parent="MyBaseTheme">
+
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@android:color/background_dark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/splash_yellow</item>
+        <item name="colorPrimaryDark">@color/splash_yellow</item>
+
+
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="0dip"--><!--android:orientation = "vertical"--><!--android:weightSum="7.5">-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@color/white"
+    android:layout_height="fill_parent">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120dip"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/appicon" />
+
+
+    <TextView
+        android:id="@+id/version_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/version"
+        android:textColor="@color/hex_gray"
+        android:layout_below="@id/imageView"
+        android:textSize="14sp"></TextView>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="180dip"
+        android:weightSum="1"
+        android:layout_marginBottom="0dip"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@color/actionbar_title_txt_color"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rights_reserved_txt"
+            android:layout_width="match_parent"
+            android:layout_weight="0.5"
+            android:layout_height="0dip"
+            android:layout_marginTop="16dp"
+            android:gravity="bottom|center_horizontal"
+            android:text="@string/rights"
+            android:textStyle="bold|italic"
+            android:textColor="@drawable/text_grey_white"
+            android:textSize="14sp"></TextView>
+
+        <TextView
+            android:id="@+id/oslv"
+            android:layout_width="match_parent"
+            android:layout_weight="0.5"
+            android:layout_height="0dip"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:text="@string/oslv"
+            android:textColor="@drawable/text_grey_white"
+            android:textStyle="bold|italic"
+            android:textSize="14sp"></TextView>
+    </LinearLayout>
+
+
+</RelativeLayout>

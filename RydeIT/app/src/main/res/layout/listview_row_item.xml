@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:id="@+id/rydename"
+        android:layout_width="0dip"
+        android:layout_weight="0.3"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+
+        android:padding="5dp"
+        android:text="UBER"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:maxLines="1"/>
+    <TextView
+        android:layout_width="0dip"
+        android:layout_weight="0.2"
+        android:layout_height="wrap_content"
+        android:id="@+id/rate"
+        android:visibility="visible"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:text="10/km"
+        android:layout_toRightOf="@id/rydename"
+        />
+
+
+    <TextView
+        android:layout_width="0dip"
+        android:layout_weight="0.2"
+        android:layout_height="wrap_content"
+        android:id="@+id/surge"
+        android:drawableLeft="@drawable/surge"
+        android:visibility="visible"
+        android:text=""
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:id="@+id/eta"
+        android:layout_width="0dip"
+        android:layout_weight="0.2"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:text="11 min"
+        android:maxLines="1"/>
+
+</LinearLayout>

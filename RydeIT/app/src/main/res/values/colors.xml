@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="preference_title_header">#0088cb</color>
+    <color name="csf_header_white">#ffffff</color>
+    <color name="cyan">#008b8b</color>
+    <color name="splash_yellow">#201E1E</color>
+
+    <color name="purple_light">#a276eb</color>
+    <color name="purple_middle">#8658ce</color>
+    <color name="purple_dark">#6a3ab2</color>
+
+    <color name="green_dark">#006600</color>
+</resources>

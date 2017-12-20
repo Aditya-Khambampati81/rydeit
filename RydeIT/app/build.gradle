@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            storeFile rootProject.file('../KeyStore/debug.keystore')
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storePassword 'android'
+        }
+        debug {
+
+            storeFile rootProject.file('../KeyStore/debug.keystore')
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storePassword 'android'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.rydeit"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 7
+        versionName "1.1"
+        signingConfig signingConfigs.debug
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            //runProguard false
+            minifyEnabled true
+            proguardFiles 'proguard-rules.txt'
+        }
+        debug {
+              minifyEnabled false
+//            proguardFiles 'proguard-rules.txt'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':ui-library')
+//    compile project(':parse-ui-login')
+    compile 'com.squareup.retrofit:retrofit:1.6.1'
+    compile 'com.google.android.gms:play-services:8.+'
+    compile 'com.google.android.gms:play-services-ads:8.+'
+    compile 'com.google.android.gms:play-services-identity:8.+'
+    compile 'com.android.support:cardview-v7:23.+'
+    compile 'com.parse.bolts:bolts-android:1.2.1'
+    compile 'com.parse:parse-android:1.10.3'
+    compile 'com.android.support:recyclerview-v7:23.+'
+    compile files('libs/FlurryAnalytics-6.1.0.jar')
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+
+}

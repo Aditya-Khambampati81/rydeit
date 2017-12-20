@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.rydeit">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22"
+        tools:overrideLibrary="com.rydeit.uilibrary" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--
+     To retrieve OAuth 2.0 tokens or invalidate tokens to disconnect a user. This disconnect
+     option is required to comply with the Google+ Sign-In developer policies
+    -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <android:uses-permission android:name="android.permission.READ_CALL_LOG" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!--
+      IMPORTANT: Change "com.parse.starter.permission.C2D_MESSAGE" in the lines below
+      to match your app's package name + ".permission.C2D_MESSAGE".
+    -->
+    <permission
+        android:name="com.rydeit.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.rydeit.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".RydeItApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        >
+
+        <!-- UBER -->
+        <meta-data
+            android:name="com.rydeit.UBER_CLIENT_ID"
+            android:value="ZhXuTL-oZZcBuO48dXeyaw9wdzU9tMwz" />
+        <meta-data
+            android:name="com.rydeit.UBER_CLIENT_SECRET"
+            android:value="76fgVF_m8XiSHpczYmI4I3EJnPjeQvevnCB16-2U" />
+        <meta-data
+            android:name="com.rydeit.UBER_REDIRECT_URL"
+            android:value="http://localhost:7000/submit" />
+        <meta-data
+            android:name="com.rydeit.UBER_SERVER_TOKEN"
+            android:value="QI1X9zKLDFT2ijLqwcy99Mt1mtmnOr5r7BBErOqh" />
+
+        <!-- OLA -->
+        <meta-data
+            android:name="com.rydeit.OLA_X_APP_TOKEN"
+            android:value="0a71fb5319964affa95b7cc80df3de86" />
+        <meta-data
+            android:name="com.rydeit.OLA_CLIENT_ID"
+            android:value="YjFkNGQzZDktMTBiZS00MTMwLTk0MGEtN2UyY2UwMjMwZGZm" />
+        <meta-data
+            android:name="com.rydeit.OLA_REDIRECT_URL"
+            android:value="http://bsoftlabs.in/" />
+
+        <activity
+            android:name=".view.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <!-- TODO REMOVE -->
+        <activity
+            android:name=".view.DemoActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".view.ResultTestActivity"
+            android:label="@string/app_name" />
+        <!-- TODO REMOVE -->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!--<meta-data-->
+            <!--android:name="com.google.android.maps.v2.API_KEY"-->
+            <!--android:value="@string/google_maps_key" />-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".view.MapsActivity"
+            android:clearTaskOnLaunch="true"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBarTheme"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".view.HistoryActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionBarTheme"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".view.TrackMyRideActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionBarTheme"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".view.SettingsProfileActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionBarTheme"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".view.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden"></activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/fbid" />
+
+        <activity
+            android:name=".view.ConfirmBookingActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionBarTheme"></activity>
+        <activity
+            android:name=".view.CabAuthActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/ActionBarTheme"></activity>
+        <!-- Parse sdk integration begin -->
+        <service android:name="com.parse.PushService" />
+
+        <receiver
+            android:name=".push.MyBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.rydeit" />
+            </intent-filter>
+        </receiver>
+        <!-- Parse sdk integration end -->
+
+
+
+
+        <service
+            android:name=".push.PushParseIntentService"
+            android:exported="false"></service>
+
+        <activity
+            android:name=".view.WebviewActivity"
+            android:label="@string/title_activity_webview"
+            android:screenOrientation="portrait"></activity>
+
+        <service
+            android:name=".view.DrawTopService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <!-- Tappx integration -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.gms.version" -->
+        <!-- android:value="@integer/google_play_services_version" /> -->
+        <receiver
+            android:name="com.apptest.MyBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+    </application>
+
+</manifest>

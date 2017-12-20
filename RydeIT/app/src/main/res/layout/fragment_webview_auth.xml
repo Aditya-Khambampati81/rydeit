@@ -1,0 +1,28 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/logihelptext"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="0.10"
+        android:gravity="center"
+        android:layout_margin="8dip"
+        android:text="@string/help_auth"
+        android:textColor="@android:color/black"
+        android:textStyle="normal"/>
+<WebView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/web_view"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="0dip"
+    android:layout_weight="0.90" />
+
+
+</LinearLayout>
+
